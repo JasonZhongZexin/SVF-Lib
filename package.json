@@ -16,6 +16,6 @@
   "bugs": {
     "url": "https://github.com/JasonZhongZexin/SVF-Lib/issues"
   },
-  "homepage": "https://github.com/JasonZhongZexin/SVF-Lib#readme"
+  "homepage": "https://github.com/JasonZhongZexin/SVF-Lib#readme",
   "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
