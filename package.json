@@ -1,5 +1,5 @@
 {
-  "name": "@JasonZhongZexin/svf-lib",
+  "name": "svf-lib",
   "version": "1.0.0",
   "description": "A static library for the open source tool SVF. This library allow user to use llvm as a third party library.",
   "main": "index.js",
@@ -16,6 +16,5 @@
   "bugs": {
     "url": "https://github.com/JasonZhongZexin/SVF-Lib/issues"
   },
-  "homepage": "https://github.com/JasonZhongZexin/SVF-Lib#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "homepage": "https://github.com/JasonZhongZexin/SVF-Lib#readme"
 }
