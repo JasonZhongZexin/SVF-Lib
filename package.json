@@ -1,6 +1,6 @@
 {
   "name": "svf_lib",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A static library for the open source tool SVF. This library allow user to use llvm as a third party library.",
   "main": "index.js",
   "dependencies":{"llvm10":"https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang+llvm-10.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz"},
