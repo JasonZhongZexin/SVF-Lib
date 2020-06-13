@@ -1,3 +1,4 @@
+#!/bin/bash
 SVFHOME=$(pwd)
 sysOS=`uname -s`
 MacLLVM="https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.0/clang+llvm-10.0.0-x86_64-apple-darwin.tar.xz"
@@ -5,7 +6,7 @@ UbuntuLLVM="https://github.com/llvm/llvm-project/releases/download/llvmorg-10.0.
 LLVMHome="llvm-10.0.0.obj"
 
 ########
-# Download LLVM binary and Z3 binary
+# Download LLVM binary
 ########
 if [[ $sysOS == "Darwin" ]]
 then
@@ -28,6 +29,4 @@ then
 else
 	echo 'not support builds in OS other than Ubuntu and Mac'
 fi
-
-
 export LLVM_DIR=$SVFHOME/$LLVMHome
