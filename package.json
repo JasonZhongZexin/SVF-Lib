@@ -4,7 +4,7 @@
   "description": "A static library for the open source tool SVF. This library allow user to use llvm as a third party library.",
   "main": "index.js",
   "scripts": {
-    "llvm_build": "./llvm_install.sh",
+    "build": "sh ./llvm_install.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
