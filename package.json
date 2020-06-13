@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "source llvm_install.sh"
+    "postinstall": "./llvm_install.sh"
   },
   "repository": {
     "type": "git",

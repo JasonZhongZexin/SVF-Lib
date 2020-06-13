@@ -15,6 +15,7 @@ then
        		echo 'Downloading LLVM binary for MacOS '
       		curl -L $MacLLVM > llvm-mac.tar.xz
       	 	mkdir ./$LLVMHome && tar -xf "llvm-mac.tar.xz" -C ./$LLVMHome --strip-components 1
+			echo $(pwd)
 		rm llvm-mac.tar.xz
        fi
 elif [[ $sysOS == "Linux" ]]
@@ -24,6 +25,7 @@ then
        		echo 'Downloading LLVM binary for Ubuntu'
       		wget -c $UbuntuLLVM -O llvm-ubuntu.tar.xz
       		mkdir ./$LLVMHome && tar -xf "llvm-ubuntu.tar.xz" -C ./$LLVMHome --strip-components 1
+			echo $(pwd)
 		rm llvm-ubuntu.tar.xz
        fi
 else
