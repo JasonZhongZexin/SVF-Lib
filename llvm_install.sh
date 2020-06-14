@@ -31,4 +31,5 @@ then
 else
 	echo 'not support builds in OS other than Ubuntu and Mac'
 fi
+mv ../svf-lib ../SVF
 export LLVM_DIR=$SVFHOME/$LLVMHome
