@@ -12,6 +12,7 @@ before_script:
 script:
   - ls
   - npm version patch
+install: true
 
 deploy:
   provider: npm
