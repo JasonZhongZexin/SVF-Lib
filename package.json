@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/JasonZhongZexin/SVF-Lib/issues"
   },
-  "homepage": "https://github.com/JasonZhongZexin/SVF-Lib#readme"
+  "homepage": "https://github.com./JasonZhongZexin/SVF-Lib#readme",
+  "dependencies": {"llvm":"file:../llvm-10.0.0.obj"}
 }
