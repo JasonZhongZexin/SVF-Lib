@@ -10,24 +10,24 @@ cd ..
 ########
 if [[ $sysOS == "Darwin" ]]
 then
-       if [ ! -d "../$LLVMHome" ]
+       if [ ! -d "$HOME/$LLVMHome" ]
        then
        		echo 'Downloading LLVM binary for MacOS '
       		curl -L $MacLLVM > llvm-mac.tar.xz
-      	 	mkdir ../$LLVMHome 
+      	 	mkdir $HOME/$LLVMHome 
 		echo 'Unzipping LLVM binary for MacOS '
-		tar -xf "llvm-mac.tar.xz" -C ../$LLVMHome --strip-components 1
+		tar -xf "llvm-mac.tar.xz" -C $HOME/$LLVMHome --strip-components 1
 		rm llvm-mac.tar.xz
        fi
 elif [[ $sysOS == "Linux" ]]
 then
-       if [ ! -d "../$LLVMHome" ]
+       if [ ! -d "$HOME/$LLVMHome" ]
        then
        		echo 'Downloading LLVM binary for Ubuntu'
       		wget -c $UbuntuLLVM -O llvm-ubuntu.tar.xz
-      		mkdir ../$LLVMHome 
+      		mkdir $HOME/$LLVMHome 
 		echo 'Unzipping LLVM binary for Ubuntu'
-		tar -xf "llvm-ubuntu.tar.xz" -C ../$LLVMHome --strip-components 1
+		tar -xf "llvm-ubuntu.tar.xz" -C $HOME/$LLVMHome --strip-components 1
 		rm llvm-ubuntu.tar.xz
        fi
 else
@@ -36,7 +36,7 @@ fi
 cd $SVFHOME
 cd ..
 install_path=$(pwd)
-echo "LLVM_DIR=../$install_path/$LLVMHome"
+echo "LLVM_DIR=$HOME/$LLVMHome"
 if [[ $sysOS == "Darwin" ]]
 then 
 ln -s $install_path/svf-lib/SVF-osx $install_path/SVF
