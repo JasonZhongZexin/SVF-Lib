@@ -10,7 +10,7 @@ cd ..
 ########
 if [[ $sysOS == "Darwin" ]]
 then
-       if [ ! -d "$LLVMHome" ]
+       if [ ! -d "../$LLVMHome" ]
        then
        		echo 'Downloading LLVM binary for MacOS '
       		curl -L $MacLLVM > llvm-mac.tar.xz
@@ -21,7 +21,7 @@ then
        fi
 elif [[ $sysOS == "Linux" ]]
 then
-       if [ ! -d "$LLVMHome" ]
+       if [ ! -d "../$LLVMHome" ]
        then
        		echo 'Downloading LLVM binary for Ubuntu'
       		wget -c $UbuntuLLVM -O llvm-ubuntu.tar.xz
