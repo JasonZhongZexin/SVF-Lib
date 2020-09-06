@@ -36,7 +36,7 @@ fi
 cd $SVFHOME
 cd ..
 install_path=$(pwd)
-echo "LLVM_DIR=$install_path/$LLVMHome"
+echo "LLVM_DIR=../$install_path/$LLVMHome"
 if [[ $sysOS == "Darwin" ]]
 then 
 ln -s $install_path/svf-lib/SVF-osx $install_path/SVF
