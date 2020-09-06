@@ -14,7 +14,7 @@ then
        then
        		echo 'Downloading LLVM binary for MacOS '
       		curl -L $MacLLVM > llvm-mac.tar.xz
-      	 	mkdir ./$LLVMHome 
+      	 	mkdir ../$LLVMHome 
 		echo 'Unzipping LLVM binary for MacOS '
 		tar -xf "llvm-mac.tar.xz" -C ../$LLVMHome --strip-components 1
 		rm llvm-mac.tar.xz
@@ -25,7 +25,7 @@ then
        then
        		echo 'Downloading LLVM binary for Ubuntu'
       		wget -c $UbuntuLLVM -O llvm-ubuntu.tar.xz
-      		mkdir ./$LLVMHome 
+      		mkdir ../$LLVMHome 
 		echo 'Unzipping LLVM binary for Ubuntu'
 		tar -xf "llvm-ubuntu.tar.xz" -C ../$LLVMHome --strip-components 1
 		rm llvm-ubuntu.tar.xz
